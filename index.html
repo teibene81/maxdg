@@ -3,11 +3,13 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="descrption" content="Lo mejor de el diseño y programación" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 	<title>MaxDG Diseño Gráfico</title>
 	<link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans:300italic,400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="normalize.ccs">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
 </head>
 <body>
 <header>
@@ -20,17 +22,31 @@
  	</figure>
 </header>
 <nav>
-	<lu>
+	<ul>
 		<li><a href="#">Inicio</a></li>
 		<li><a href="#">¿Quien soy?</a></li>
 		<li><a href="#">Galeria</a></li>
 		<li><a href="#">Trabajos</a></li>
 		<li><a href="#">Contacto</a></li>
 		<li id="publicar_nav">
-		<a href="#">Publicar</a>
+		<a href="#" class="icon-lapiz" id="mostrar-form">Publicar</a>
 		</li>
-	</lu>
+	</ul>
 </nav>
+
+<!-- Formulario -->
+<form action="" id="formulario" class="formulario">
+	<input type="text" id="titulo" placeholder="Título" required>
+	<input type="url" id="url" placeholder="link" required>
+	<input type="submit" value="AGREGAR">
+</form>
+<!-- fin formulario -->
+
+<aside>
+<video width="320" height="240" autoplay controls>
+  <source src="computerr.mp4" type="video/mp4">
+</video>
+</aside>
 <section id="contenido">
 	<article class="item">
 		<figure class="imagen_item">
@@ -46,23 +62,147 @@
 		</div>
 		<div class="datos_item">
 			<a href="" class="tag_item">pony</a>
-			<span> hace <strong>5</strong> min</span>
-			<a href="#" class="comentarios_item"></a>
-			<a href="#" class="guardar_item"></a>
+			<span class="fecha_item"> hace <strong>5</strong> min</span>		
 		</div>
 		<div class="votacion">
-			<a href="#" class="up">
-			<a href="#" class="down"></a>
+			<a href="#" class="up icon-arriba"> </a>
+			567
+			<a href="#" class="down icon-abajo"></a>
+			<a href="#" class="comentarios_item">3</a>
+			<a href="#" class="guardar_item icon-estrella"></a>
+		</div>
+	</article>
+	<article class="item">
+		<figure class="imagen_item">
+			<img src="imagenes/imagen.jpg" />
+		</figure>
+		<h2 class="titulo_item">
+			<a href="#">
+			Título del artículo sdkñlklñfj añslkdj fañlskdj fñalskdj
+			</a>
+		</h2>
+		<div class="autor_item">
+			por <a href="#">Alejandra Gómez</a>
+		</div>
+		<div class="datos_item">
+			<a href="" class="tag_item">pony</a>
+			<span class="fecha_item"> hace <strong>5</strong> min</span>		
+		</div>
+		<div class="votacion">
+			<a href="#" class="up icon-arriba"> </a>
+			567
+			<a href="#" class="down icon-abajo"></a>
+			<a href="#" class="comentarios_item">3</a>
+			<a href="#" class="guardar_item icon-estrella"></a>
+		</div>
+	</article>
+	<article class="item">
+		<figure class="imagen_item">
+			<img src="imagenes/imagen.jpg" />
+		</figure>
+		<h2 class="titulo_item">
+			<a href="#">
+			Título del artículo adaasd asdjad
+			</a>
+		</h2>
+		<div class="autor_item">
+			por <a href="#">Alejandra Gómez</a>
+		</div>
+		<div class="datos_item">
+			<a href="" class="tag_item">pony</a>
+			<span class="fecha_item"> hace <strong>5</strong> min</span>		
+		</div>
+		<div class="votacion">
+			<a href="#" class="up icon-arriba"> </a>
+			567
+			<a href="#" class="down icon-abajo"></a>
+			<a href="#" class="comentarios_item">3</a>
+			<a href="#" class="guardar_item icon-estrella"></a>
+		</div>
+	</article>
+	<article class="item">
+		<figure class="imagen_item">
+			<img src="imagenes/imagen.jpg" />
+		</figure>
+		<h2 class="titulo_item">
+			<a href="#">
+			Título del artículosdf adf adfas dfas
+			</a>
+		</h2>
+		<div class="autor_item">
+			por <a href="#">Alejandra Gómez</a>
+		</div>
+		<div class="datos_item">
+			<a href="" class="tag_item">pony</a>
+			<span class="fecha_item"> hace <strong>5</strong> min</span>		
+		</div>
+		<div class="votacion">
+			<a href="#" class="up icon-arriba"> </a>
+			567
+			<a href="#" class="down icon-abajo"></a>
+			<a href="#" class="comentarios_item">3</a>
+			<a href="#" class="guardar_item icon-estrella"></a>
+		</div>
+	</article>
+	<article class="item">
+		<figure class="imagen_item">
+			<img src="imagenes/imagen.jpg" />
+		</figure>
+		<h2 class="titulo_item">
+			<a href="#">
+			Título del artículo asdf afa sdfadfbxcvb
+			</a>
+		</h2>
+		<div class="autor_item">
+			por <a href="#">Alejandra Gómez</a>
+		</div>
+		<div class="datos_item">
+			<a href="" class="tag_item">pony</a>
+			<span class="fecha_item"> hace <strong>5</strong> min</span>		
+		</div>
+		<div class="votacion">
+			<a href="#" class="up icon-arriba"> </a>
+			567
+			<a href="#" class="down icon-abajo"></a>
+			<a href="#" class="comentarios_item">3</a>
+			<a href="#" class="guardar_item icon-estrella"></a>
+		</div>
+	</article>
+	<article class="item">
+		<figure class="imagen_item">
+			<img src="imagenes/imagen.jpg" />
+		</figure>
+		<h2 class="titulo_item">
+			<a href="#">
+			Título del artículo dfges bsdfbsd fbsdfbd
+			</a>
+		</h2>
+		<div class="autor_item">
+			por <a href="#">Alejandra Gómez</a>
+		</div>
+		<div class="datos_item">
+			<a href="" class="tag_item">pony</a>
+			<span class="fecha_item"> hace <strong>5</strong> min</span>		
+		</div>
+		<div class="votacion">
+			<a href="#" class="up icon-arriba"> </a>
+			567
+			<a href="#" class="down icon-abajo"></a>
+			<a href="#" class="comentarios_item">3</a>
+			<a href="#" class="guardar_item icon-estrella"></a>
 		</div>
 	</article>
 </section>
+
 <footer>
 	<p>
-		<strong>MaxDG ®</strong>
+		<strong>MaxDG <small>®</small></strong>
 	</p>
 	<p>
 		maxdg.com
 	</p>
 </footer>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/formulario.js"></script>
 </body>
 </html>
