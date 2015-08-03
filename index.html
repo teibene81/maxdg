@@ -8,7 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href='http://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans:300italic,400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="normalize.ccs">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -28,8 +28,8 @@
 		<li><a href="#">Galeria</a></li>
 		<li><a href="#">Trabajos</a></li>
 		<li><a href="#">Contacto</a></li>
-		<li id="publicar_nav">
-				<a href="#" class="icon-lapiz" id="mostrar-form">Publicar</a>
+		<li id="publicar_nav" class="disabled">
+				<a href="#" class="icon-lapiz disabled" id="mostrar-form">Publicar</a>
 		</li>
 		</ul>
 </nav>
@@ -43,9 +43,11 @@
 <!-- fin formulario -->
 
 <aside>
+<div id="geo"></div>
 <video width="320" height="240" autoplay controls>
   <source src="computerr.mp4" type="video/mp4">
 </video>
+
 </aside>
 <section id="contenido">
 	<article class="item">
@@ -204,5 +206,12 @@
 </footer>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/formulario.js"></script>
+<script type="text/javascript" src="js/alert.js"></script>
+<script  src="js/geo.js"></script>
+<script>
+	$(function(){
+		
+	});
+</script>
 </body>
 </html>

@@ -151,11 +151,6 @@ nav ul #publicar_nav a:hover:before{
 	font-size: 1.3em;
 	
 }
-nav ul #publicar_nav.disabled{
-	background-color: grey;
-	cursor: arrow;
-	box-shadow: none;
-}
 nav ul li
 {
 	display: inline-block;
