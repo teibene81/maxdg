@@ -8,16 +8,27 @@ var $form = $('#formulario'),
 
 function mostrarFormulario(){
 	$form.slideToggle();
-	return: false;
-
+	return false;
 }
 
 function agregarPost(){
-	return: false;
+	var url = $url.val(),
+		titulo = $titulo.val(),
+		$clone = $post.clone();
 
+	$clone.find('.titulo_item a')
+		.text(titulo)
+		.attr('href', url);
+
+	$clone.hide();
+
+	$list.prepend($clone);
+
+	$clone.fadeIn();
+
+	return false;
 }
 
 // Eventos
-
 $button.click( mostrarFormulario );
-$form.on('submit', agregarPost);
+$form.on('submit', agregarPost );
